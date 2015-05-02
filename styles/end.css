@@ -1,0 +1,258 @@
+body{
+    vh: 100%;
+    vw: 100%;
+    background-color: #9cd0c2;
+}
+
+span {
+	padding-top: 40px;
+	display: block;
+	text-align: center;
+	font-size: 92px;
+	color: white;
+	font-family: 'Futura';
+	font-weight: 300;
+	text-align: center;
+}
+#bounce{
+    margin-left: 26%;
+    padding-top: 9%;
+}
+
+#areaGame5 {
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 1280px;
+	height: 645px;
+    background-color: #9cd0c2;
+}
+
+#ball5 {
+    display: none;
+    position: absolute;
+    margin: auto;
+	margin-left:41%;
+	margin-top:6%;
+	background: white;
+	font-size: 3em;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	-moz-animation: pulsate 3s infinite;
+	-webkit-animation: pulsate 3s infinite;
+	animation: pulsate 3s infinite;
+}
+
+#coeur{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 40%;
+}
+
+
+#bouton{
+    position: absolute;
+    margin: auto;
+	margin-left:38%;
+    margin-top: 4.4%;
+	width: 300px;
+	height: 300px;
+    	-moz-animation: pulsate2 3s infinite;
+	-webkit-animation: pulsate2 3s infinite;
+	animation: pulsate2 3s infinite;
+opacity: 0;
+}
+
+#nuage1{
+    position: absolute;
+    -webkit-animation: mouv 7s ease-out;
+  -moz-animation: mouv 7s ease-out;
+  animation: mouv 7s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+    width: 350px;
+
+}
+
+#nuage2{
+    position: absolute;
+    width: 450px;
+    margin-left: 1800px;
+    margin-top: 50px;
+    -webkit-animation: mouv2 7s ease-out;
+    -moz-animation: mouv2 7s ease-out;
+    animation: mouv2 7s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+}
+
+#fleur1{
+    position: absolute;
+    width: 90px;
+    margin-left: 925px;
+    margin-top: 199px;
+}
+
+#fleur2{
+    position: absolute;
+    width: 250px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+#fleur3{
+    position: absolute;
+    width: 340px;
+    margin-left: 700px;
+    margin-top: -207px;
+}
+
+#play{
+    position: absolute;
+	margin-left:28%;
+	margin-top:21%;
+    position: absolute;
+    opacity: 0;
+
+}
+#play:hover{
+    position: absolute;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+    opacity:1; 
+}
+
+#play:not(:hover){
+    position: absolute;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+    opacity:0; 
+}
+
+
+@-webkit-keyframes pulsate2 {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes pulsate {
+  0%,100% {
+
+    transform: translateY(0);
+  }
+  50% {
+
+    transform: translateY(20px);
+  }
+}
+/*
+@-moz-keyframes pulsate {
+  0%,100% {
+    -webkit-box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+  }
+}
+ @keyframes pulsate {
+  0%,100% {
+    -moz-box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+    -webkit-box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+  }
+  50% {
+    -moz-box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+    -webkit-box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+  }
+}*/
+
+
+
+@-moz-keyframes mouv {
+ 0% {
+     margin-left: 0px;;
+ }
+ 25% {
+    margin-left: 30px;
+ }
+ 50% {
+    margin-left: 60px;
+ }
+ 75% {
+    margin-left: 30px;
+ }
+ 100% {
+    margin-left: 0px;
+ }
+}
+
+@-webkit-keyframes "mouv" {
+ 0% {
+    margin-left: 0px;
+ }
+ 25% {
+    margin-left: 30px;
+ }
+ 50% {
+    margin-left: 60px;
+ }
+ 75% {
+    margin-left: 30px;
+ }
+ 100% {
+    margin-left: 0px;
+ }
+}
+
+@-moz-keyframes mouv2 {
+ 0% {
+     margin-left: 760px;;
+ }
+ 25% {
+    margin-left:790px;
+ }
+ 50% {
+    margin-left:820px;
+ }
+ 75% {
+    margin-left:790px;
+ }
+ 100% {
+    margin-left:760px;
+ }
+}
+
+@-webkit-keyframes "mouv2" {
+ 0% {
+    margin-left:760px;
+ }
+ 25% {
+    margin-left:790px;
+ }
+ 50% {
+    margin-left:820px;
+ }
+ 75% {
+    margin-left:790px;
+ }
+ 100% {
+    margin-left:760px;
+ }
+}

@@ -1,0 +1,247 @@
+/* Fond */
+
+body {
+  background-color: #9cd0c2;
+}
+
+#fullscreen {
+    position: absolute;
+    z-index: 20000;
+    margin: auto;
+    display: block;
+    top: 130px;
+    left:calc(50vw - 450px);
+}
+
+.areaGame {
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 1280px;
+	height: 800px;
+	background-image: url(../images/Niveau1BC.png);
+}
+
+/* MURS */
+
+#a {
+    width: 1280px;
+    height: 20px;
+    position: absolute;
+    transform-origin: 50%;
+    z-index: 99;
+    background: white;
+    left: 0px;
+    top: 0px;
+    opacity: 0.0;
+}
+
+
+#b {
+    width: 305px;
+    height: 20px;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    left: 3px;
+    top: 475px;
+    opacity: 0.0;
+}
+
+#c {
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    transform:rotateZ(90deg);
+    left: 261px;
+    top: 509px;
+    opacity: 0.0;
+}
+
+#e{
+    width: 280px;
+    height: 20px;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    left: 300px;
+    top: 558px;
+    opacity: 0.0;
+}
+
+
+#f{
+    width: 220px;
+    height: 20px;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    transform:rotateZ(28deg);
+    left: 560px;
+    top: 617px;
+    opacity: 0.0;
+}
+
+#g{
+    width: 260px;
+    height: 20px;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    left: 760px;
+    top: 669px;
+    opacity: 0.0;
+}
+
+#h{
+    width: 100px;
+    height: 20px;
+    transform-origin: 50%;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    transform:rotateZ(90deg);
+    left: 960px;
+    top: 725px;
+    opacity: 0.0;
+}
+
+#i{
+    width: 280px;
+    height: 20px;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    left: 1000px;
+    top: 756px;
+    opacity: 0.0;
+}
+
+#j{
+    width: 900px;
+    height: 20px;
+    transform-origin: 50%;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    transform:rotateZ(90deg);
+    left: 818px;
+    top: 300px;
+    opacity: 0.0;
+}
+
+#l{
+    width: 700px;
+    height: 20px;
+    transform-origin: 50%;
+    position: absolute;
+    z-index: 99;
+    background: white;
+    transform:rotateZ(90deg);
+    right: 935px;
+    top: 300px;
+    opacity: 0.0;
+}
+
+
+#ball div, #a div, #b div, #c div, #e div, #f div, #g div, #h div, #i div, #j div, #l div, #ennemi1 div, #transition div {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#ball:hover div, #b:hover div, #c:hover div, #ennemi1:hover div, #ennemi2:hover div {
+    visibility: visible;
+    outline: solid 1px blue;
+}
+
+/* Objets */
+
+
+
+
+#transition {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    transform-origin: 50%;
+    z-index: 99;
+    background: green;
+    left: 1200px;
+    top: 400px;
+    opacity: 0.5;
+}
+
+
+
+/* Balle */
+
+#ball {
+  position: absolute;
+  left:40px;
+  top:250px;
+  background: white;
+  font-size: 1em;
+  opacity: 0.8;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -moz-animation: pulsate 3s infinite;
+  -webkit-animation: pulsate 3s infinite;
+  animation: pulsate 3s infinite;
+}
+
+@-webkit-keyframes pulsate {
+  0%,100% {
+    -moz-box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.5);
+    transform: translateY(0);
+  }
+  50% {
+    -moz-box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.6);
+    transform: translateY(10px);
+  }
+}
+@-moz-keyframes pulsate {
+  0%,100% {
+    -webkit-box-shadow: 0 0 1em 0.34em rgba(178, 17, 7, 0.85);
+    box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+  }
+}
+@keyframes pulsate {
+  0%,100% {
+    -moz-box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+    -webkit-box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 1em 0.34em rgba(255, 255, 255, 0.85);
+  }
+  50% {
+    -moz-box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+    -webkit-box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 3em 1em rgba(255, 255, 255, 0.85);
+  }
+}
+
+/* Ne pas toucher */
+
+.left-top { left: 0; top: 0; background: yellow; }
+.right-top {right: 0; top: 0; background: red; }
+.right-bottom { right: 0; bottom: 0; background:blue;}
+.left-bottom { left: 0; bottom: 0; background: lime; }
+
+#dotline {
+    width: 3px;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    z-index: 300;
+    
+}
