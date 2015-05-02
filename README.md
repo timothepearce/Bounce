@@ -3,3 +3,7 @@ Bounce is a JavaScript game, only functional on Chrome browser at the moment (Fi
 
 # Rules
 The user control a small ball of light who must grab music note (blue balls), before to reach the end of each level. he must pay attention to the ennemis (red wall and red balls) who can kill him.
+
+# Gameplay
+The user control the direction of the ball with the arrows keys.
+Each ball of music add a sound in the browser.
